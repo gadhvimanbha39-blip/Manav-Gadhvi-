@@ -91,3 +91,61 @@
 
 </body>
 </html>
+# 🛍️ Manav Gadhvi Deals
+
+Welcome to **Manav Gadhvi Deals** 👋  
+Here you will find the best **clothing, fashion & lifestyle deals** in one place.
+
+---
+
+## 👕 Fashion & Clothing Deals
+
+🔥 Trending Shirts, T-Shirts & Hoodies  
+👖 Stylish Jeans & Pants  
+👟 Sneakers & Shoes  
+🧥 Jackets & Winter Wear  
+🎒 Accessories (Belts, Bags, Watches)
+
+👉 All products are selected based on:
+- Latest trends
+- Best discounts
+- High quality & comfort
+
+---
+
+## 💰 Best Offers
+
+💥 Daily updated deals  
+💥 Affiliate discount links  
+💥 Limited time offers  
+
+---
+
+## 📌 Categories Focus
+
+✔ Men's Fashion  
+✔ Women's Fashion  
+✔ Casual Wear  
+✔ Party Wear  
+✔ Street Style  
+
+---
+
+## ❌ Removed Sections
+
+🚫 Games Section Removed  
+🚫 Gaming Content Removed  
+🚫 Unrelated Apps Removed  
+
+---
+
+## ⚡ About This Page
+
+This page is created by **Manav Gadhvi** to help users find **best clothing deals quickly** in one place.
+
+---
+
+## 📞 Contact
+
+For updates or collaboration:  
+👉 GitHub Profile: https://github.com/gadhvimanbha39-blip
