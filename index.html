@@ -265,3 +265,147 @@ footer {
 Made with ❤️ for Affiliate Earnings | Amazon Associates
 </footer></body>
 </html>
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Manav Deals Store - Smart Affiliate Hub</title>
+<meta name="description" content="Best trending Amazon deals and affiliate products" />
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+header {
+    background: linear-gradient(90deg,#111,#333);
+    color: white;
+    padding: 18px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+.banner {
+    background: #ff9900;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+.search-box {
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+}
+.search-box input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 15px;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.card h3 {
+    margin: 10px 0 5px;
+}
+.price {
+    color: green;
+    font-weight: bold;
+}
+.btn {
+    display: block;
+    text-align: center;
+    background: #ff9900;
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn:hover {
+    background: #e68a00;
+}
+.whatsapp {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: #25D366;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #111;
+    color: white;
+    margin-top: 20px;
+}
+</style>
+</head>
+<body><header>
+🔥 Manav Deals Store - Affiliate Hub 🔥
+</header><div class="banner">
+⚡ Today Trending Deals - Limited Time Offers ⚡
+</div><div class="search-box">
+<input type="text" id="search" onkeyup="searchProducts()" placeholder="Search products...">
+</div><div class="container" id="productContainer"></div><a class="whatsapp" href="https://wa.me/919106828646" target="_blank">WhatsApp</a>
+
+<footer>
+Made with ❤️ | Powered by Amazon Affiliate System
+</footer><script>
+const products = [
+    {name:"Bluetooth Earbuds", price:"₹799", img:"https://m.media-amazon.com/images/I/61ZjlBOp+rL._SL1500_.jpg", link:"https://amzn.to/your-affiliate-link"},
+    {name:"Fast Charging Cable", price:"₹299", img:"https://m.media-amazon.com/images/I/71Ftzmh3ZLL._SL1500_.jpg", link:"https://amzn.to/your-affiliate-link"},
+    {name:"Power Bank 10000mAh", price:"₹999", img:"https://m.media-amazon.com/images/I/61+Q6Rh3OQL._SL1500_.jpg", link:"https://amzn.to/your-affiliate-link"},
+    {name:"LED Strip Lights", price:"₹499", img:"https://m.media-amazon.com/images/I/71K9CbNZPsL._SL1500_.jpg", link:"https://amzn.to/your-affiliate-link"}
+];
+
+function renderProducts(list){
+    const container = document.getElementById('productContainer');
+    container.innerHTML = '';
+    list.forEach(p=>{
+        container.innerHTML += `
+        <div class="card">
+            <img src="${p.img}" />
+            <h3>${p.name}</h3>
+            <p class="price">${p.price}</p>
+            <a class="btn" href="${p.link}" target="_blank" onclick="trackClick('${p.name}')">Buy Now</a>
+        </div>
+        `;
+    });
+}
+
+function searchProducts(){
+    let input = document.getElementById('search').value.toLowerCase();
+    let filtered = products.filter(p=>p.name.toLowerCase().includes(input));
+    renderProducts(filtered);
+}
+
+function trackClick(name){
+    let clicks = JSON.parse(localStorage.getItem('clicks')||"{}");
+    clicks[name] = (clicks[name]||0)+1;
+    localStorage.setItem('clicks', JSON.stringify(clicks));
+}
+
+renderProducts(products);
+</script></body>
+</html>
