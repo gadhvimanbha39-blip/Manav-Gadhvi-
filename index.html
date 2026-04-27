@@ -536,3 +536,121 @@ renderProducts(products);
     This page contains affiliate links. I may earn a commission.
   </p>
 </section>
+<section class="premium-section">
+  <h2>🔥 Trending Accessories</h2>
+
+  <div class="products">
+
+    <!-- PRODUCT -->
+    <div class="card">
+      <img src="https://via.placeholder.com/250" />
+      <h3>Stylish Sunglasses</h3>
+      <p>Premium look sunglasses for daily use</p>
+      <a href="YOUR_AFFILIATE_LINK" target="_blank">Shop Now</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/250" />
+      <h3>Luxury Watch</h3>
+      <p>Modern design watch under budget</p>
+      <a href="YOUR_AFFILIATE_LINK" target="_blank">View Deal</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/250" />
+      <h3>Trendy Ring</h3>
+      <p>Stylish ring for daily wear</p>
+      <a href="YOUR_AFFILIATE_LINK" target="_blank">Check Price</a>
+    </div>
+
+  </div>
+
+  <p class="disclaimer">
+    This page contains affiliate links. I may earn a commission.
+  </p>
+</section>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.premium-section {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+}
+
+.premium-section h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 20px;
+  width: 260px;
+  transition: 0.4s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.8);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #3b82f6, #06b6d4);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background: linear-gradient(45deg, #06b6d4, #3b82f6);
+}
+
+.disclaimer {
+  margin-top: 40px;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  </style>
